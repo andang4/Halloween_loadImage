@@ -1,35 +1,24 @@
-# Halloween_loadImage
+PImage img;
 
+void setup() {
+  size(800, 500);
+  img = loadImage("pumpkins.png");
+  image(img,0,0);
+}
 
-## GOALS For This Assignment
-Learn how to use the image functions to load an image. 
-Create an artwork using loadImage functions and setup and draw
-Expand Java vocabulary
+void draw()
+{
+  save("Anthony.Halloween.png");
+}
 
-
-## REQUIREMENTS 
-Create an artwork with a loaded image and setup and draw
-Change and add to the provided source code
-Make a design in Processing, take a screenshot and submit in Google Classroom
-
-You will need to download the provided image file, or another to your desktop then go to: 
-#Sketch > Add file > Select your image
-This will create a DATA folder with your image. 
-
-*You must do this in order for your code to work.*
-
-
-
-## NAMING Convention
-
-“YOURNAME_Halloween”
-“ _ “ underscore in between words
-
-
-
-## GRADING 
-
-Graded by meeting the requirements and timely completion of the assignment. 
+void mouseDragged()
+{
+  //"carves" the pumpkins
+  blendMode(OVERLAY);
+  noStroke();
+  fill(255,200,25);
+  ellipse(mouseX,mouseY, 5, 5);
+} 
 
 
 
