@@ -1,6 +1,6 @@
 //Click and Drag your cursor to "carve" the pumpkins
 
-PImage img;
+/* @pjs preload="flag.png"; */
 
 void setup() {
   size(800, 500);
